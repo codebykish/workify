@@ -1,0 +1,8 @@
+<h1><%= @artist.name %></h1>
+
+<p><%= @artist.age %></p>
+<p><%= @artist.bio %></p>
+
+<p><% @artist.photos.each do |photo| %>
+  <%= image_tag photo.image %></p>
+  <% end %>
