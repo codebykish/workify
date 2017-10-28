@@ -10,9 +10,13 @@
 
   <body>
     <div ="container">
+      <p class="notice"><%= notice %></p>
+      <p class="alert"><%= alert %></p>
+      
      <%= yield %>
      <hr>
      <%= link_to "[All Artists]", root_path %>
     </div>
+
   </body>
 </html>

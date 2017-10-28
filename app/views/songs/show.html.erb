@@ -1,4 +1,4 @@
-<h1 id="<%=@artist.id%>"><%= @artist.name %></h1>
+<h1><%= @artist.name %></h1>
 
 <p>Age: <%= @artist.age %></p>
 <p>Bio: <%= @artist.bio %></p>
@@ -18,20 +18,8 @@
              </li>
        </ul>
 
-
-
     <% end %>
-
-
 
    <% else %>
    <p>There are no songs listed.</p>
 <% end %>
-
-<h3>Add a Song</h3>
-
-<div class="form-group">
-  <label for="add">Name</label>
-  <input type="text" class="form-control" id="add">
-  <button onclick="addSong()"id="addSong">Add Song</button>
-</div>
