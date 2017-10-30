@@ -1,9 +1,13 @@
 require 'rails_helper'
 
+describe "Adding a song" do
+
+let(:artist) { create :artist }
+
 feature 'Manage songs', js: true do
   scenario 'add a new song' do
 
-    visit "http://localhost:3000/artists/1"
+    visit artist_path(artist)
 
     # time for chit chat with teacher
     sleep(2)
@@ -19,4 +23,5 @@ feature 'Manage songs', js: true do
 
     expect(page).to have_content('Spiderman')
   end
+ end
 end
