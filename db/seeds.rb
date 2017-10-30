@@ -24,10 +24,10 @@ song_9 = Song.create!(name: "Red", artist: artist_2)
 song_10 = Song.create!(name: "Purple", artist: artist_2)
 song_11 = Song.create!(name: "Not Sure", artist: artist_4)
 
-# photo1 = Photo.create!(remote_image_url: "http://res.cloudinary.com/imagestorethingy/image/upload/v1507821795/pexels-photo-169391_majhad.jpg", artist: artist_1)
-# photo2 = Photo.create!(remote_image_url: "http://res.cloudinary.com/imagestorethingy/image/upload/v1507821772/pexels-photo-169209_kkfc5t.jpg", artist: artist_2)
-# photo3 = Photo.create!(remote_image_url: "http://res.cloudinary.com/imagestorethingy/image/upload/v1507821759/pexels-photo-262524_abye8v.jpg", artist: artist_3)
-#
-# photo4 = Photo.create!(remote_image_url: "http://res.cloudinary.com/imagestorethingy/image/upload/v1507821744/pexels-photo-388238_bkqmfx.jpg", artist: artist_4)
-# photo5 = Photo.create!(remote_image_url: "http://res.cloudinary.com/imagestorethingy/image/upload/v1507821732/black-and-white-man-person-musician_oxobih.jpg", artist: artist_5)
-# photo6 = Photo.create!(remote_image_url: "http://res.cloudinary.com/imagestorethingy/image/upload/v1507821702/pexels-photo-270085_lhpa0v.jpg", artist: artist_6)
+photo1 = Photo.create!(remote_image_url: "http://res.cloudinary.com/imagestorethingy/image/upload/v1507821795/pexels-photo-169391_majhad.jpg", artist: artist_1)
+photo2 = Photo.create!(remote_image_url: "http://res.cloudinary.com/imagestorethingy/image/upload/v1507821772/pexels-photo-169209_kkfc5t.jpg", artist: artist_2)
+photo3 = Photo.create!(remote_image_url: "http://res.cloudinary.com/imagestorethingy/image/upload/v1507821759/pexels-photo-262524_abye8v.jpg", artist: artist_3)
+
+photo4 = Photo.create!(remote_image_url: "http://res.cloudinary.com/imagestorethingy/image/upload/v1507821744/pexels-photo-388238_bkqmfx.jpg", artist: artist_4)
+photo5 = Photo.create!(remote_image_url: "http://res.cloudinary.com/imagestorethingy/image/upload/v1507821732/black-and-white-man-person-musician_oxobih.jpg", artist: artist_5)
+photo6 = Photo.create!(remote_image_url: "http://res.cloudinary.com/imagestorethingy/image/upload/v1507821702/pexels-photo-270085_lhpa0v.jpg", artist: artist_6)
