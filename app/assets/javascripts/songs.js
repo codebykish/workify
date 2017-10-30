@@ -13,7 +13,7 @@ function deleteAllSongs(){
 function deleteSong(id){
 
   var artistId = $("h1").attr("id")
-  var buttonId = $("button").attr("id")
+  // var buttonId = $("button").attr("id")
 
   $.ajax({
    type: "DELETE",
