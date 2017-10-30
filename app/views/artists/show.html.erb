@@ -10,22 +10,28 @@
  <h3>Songs</h3>
 
  <% if @artist.songs.any? %>
-   <% @artist.songs.each do |song| %>
+      <ul class="song-group">
+        <% @artist.songs.each do |song| %>
 
-       <ul class="song-group">
+
              <li id="<%=song.id%>"><%= song.name %></li>
-               <button onclick="deleteSong(<%=song.id%>)" id="<%=song.name%>">Delete Song</button>
+               <button onclick="deleteSong(<%=song.id%>)" id="<%=song.id%>" class="deleteButton">Delete Song</button>
              </li>
-       </ul>
 
 
 
-    <% end %>
+
+        <% end %>
+
+      </ul>
 
 
 
    <% else %>
-   <p>There are no songs listed.</p>
+
+   <ul class="song-group">
+   </ul>
+
 <% end %>
 
 <h3>Add a Song</h3>
@@ -33,5 +39,9 @@
 <div class="form-group">
   <label for="add">Name</label>
   <input type="text" class="form-control" id="add">
-  <button onclick="addSong()"id="addSong">Add Song</button>
+  <input type="button" onclick="addSong()"id="addSong" value="Add Song">
+</div>
+
+<div class="delete-button">
+  <button onclick="deleteAllSongs()"id="deleteAllSongs">Delete All Songs</button>
 </div>

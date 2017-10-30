@@ -1,3 +1,15 @@
+function deleteAllSongs(){
+
+  var songs = $(".song-group").children();
+  songs.each(function() {
+    deleteSong($(this).attr("id"));
+
+    $(".deleteButton").remove();
+
+ })
+
+ }
+
 function deleteSong(id){
 
   var artistId = $("h1").attr("id")
@@ -11,7 +23,11 @@ function deleteSong(id){
  })
  .done(function(data) {
      $('li[id="'+id+'"]').remove();
-     $('button[id="'+buttonId+'"]').remove();
+    //  $('button[id="'+buttonId+'"]').remove();
+     $(".deleteButton[id="+id+"]").remove();
+
+    //  event.target.remove();
+
    });
  }
 
@@ -31,11 +47,10 @@ function addSong() {
  .done(function(data) {
    console.log(data);
 
-   var songId = data.id
+   var songId = data.id;
+   var songName = data.name;
 
-   var listItem = $('<ul class="song-group"></ul>')
-      .attr('id', songId)
-      .append($('<li>').append(songId))
+   $("ul").append('<li id="'+songId+'">'+songName+'</li><button onclick="deleteSong('+songId+')" id="'+songId+'" class="deleteButton">Delete Song</button>');
 
 
 
